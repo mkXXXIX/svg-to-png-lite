@@ -1,37 +1,38 @@
 # svg-to-png-lite
 
-> Converter SVG para PNG.
+> Converter SVG to PNG
 
-## Como iniciar
+## HOW TO START
 
 _Start:_
 
-1. Instale a dependência com `npm i --save svg-to-png-lite`
-2. Importe a biblioteca:
+1. Install a dependency with `npm i --save svg-to-png-lite`
+
+2. Import a library:
 ````javascript
 import svgpng from 'svg-to-png-lite';
 ````
-Exemplo 1:
+Example 1:
 ````javascript
-// Passe o ID do SVG
+// Passing o ID do SVG
 svgpng("svg-id").then(console.log).catch(console.error)
 ````
 
-Exemplo 2:
+Example 2:
 ````javascript
-// Determinando Width e Height - Passando ID e Opções
+// Determining Width and Height - Passando e Opções
 svgpng("svg-id", {width:300, height:300}).then(console.log).catch(console.error)
 ````
-## OPÇÕES
+## OPTIONS
 
-### WIDTH `Number`.  Default `largura do SVG`
+### WIDTH `Number`.  Default `Default SVG width`
 
-Determina a largura da imagem.
+Determines the width of the image.
 
-### HEIGHT `Number`. Default `altura do SVG`
+### HEIGHT `Number`. Default `Default SVG height`
 
-Determina a altura da imagem.
+Determines the height of the image.
 
 ### EXT `String`. Default `PNG`
 
-Determina a extensão da imagem\: PNG ou JPEG
+Determines the extension of the image: PNG or JPEG
